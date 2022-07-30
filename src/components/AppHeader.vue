@@ -50,7 +50,6 @@ export default{
     padding-top: 20px;
     display: flex;
     justify-content: space-between;
-    background-color: #F5EDE7;
     height: 90px;
 }
 .header{
@@ -65,6 +64,7 @@ export default{
 
 }
 li{
+    color: black;
     margin-left: 10px;
     font-family: 'DM Sans';
     font-style: normal;
@@ -86,9 +86,14 @@ li:hover{
     margin-right: 25px;
 }
 .log_in{
+    
     padding-right: 10px;
     align-items: center;
     text-align: -webkit-center;
+}
+.cart_txt,
+.log_txt{
+    color: black;
 }
 .log_txt:hover{
     color: #FFC3A0;

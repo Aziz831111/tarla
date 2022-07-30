@@ -3,6 +3,7 @@
 <AppSectionA />
 <AppSectionB />
 <AppSectionC />
+<AppCart />
 
 </template>
 
@@ -11,6 +12,7 @@ import AppHeader from './components/AppHeader.vue';
 import AppSectionA from './components/AppSectionA.vue';
 import AppSectionB from './components/AppSectionB.vue';
 import AppSectionC from './components/AppSectionC.vue';
+import AppCart from './components/AppCart.vue';
 
 
 
@@ -20,16 +22,18 @@ export default {
     AppHeader,
     AppSectionA,
     AppSectionB,
-    AppSectionC
+    AppSectionC,
+    AppCart
 }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'DM Sans', 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  
+  
 }
 </style>

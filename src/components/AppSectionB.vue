@@ -38,7 +38,7 @@
                 </p>
             </div>
             
-            <div class="like">
+            <div class="like_Buter">
                 <img src="../assets/sec2/like.png" alt="like">
                 <div class="like_blog">
                     <h2 class="like_title">Take the credit</h2>
@@ -80,6 +80,7 @@ import BtN from "./v-button.vue"
     padding-top: 50px;
 }
 .content{
+    text-align: center;
     margin-top: 70px;
     display: flex;
     align-items: center;
@@ -137,6 +138,7 @@ img{
         color: #000000;
     }
      .btnSecB{
+        text-align: center;
         margin-top: 70px;
      }
 

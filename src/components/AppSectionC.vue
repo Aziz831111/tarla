@@ -31,10 +31,7 @@ export default{
 
 
 <style scoped>
-.sec3{
-    background-color: #F5EDE7;
-    height: 100vh;
-}
+
 .img_sec_tree{
     width: 680px;
     height: 529px;
