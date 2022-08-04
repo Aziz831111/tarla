@@ -36,6 +36,9 @@ html{
   ul[class] {
     list-style: none;
   }
+  li{
+    list-style: none;
+  }
   
   img {
     max-width: 100%;

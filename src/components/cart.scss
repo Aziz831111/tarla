@@ -1,15 +1,12 @@
 
 .wrapperCart{
-    padding-left: 20px;
+    padding: 25px;
     padding-top: 50px;
     height: 600px;
     width: 400px;
 }
-.cart_items{
-    border: 1px solid #000;
-    padding: 15px;
-    border-radius: 15px;
-}
+
+
 .cart_inner{
     color: #000;
     padding-top: 15px;
@@ -45,7 +42,8 @@
     top: 25px;
 
     img{
-        margin-left: 35px;
+        cursor: pointer;
+        margin-left: 20px;
     }
 
 }

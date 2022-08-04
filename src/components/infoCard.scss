@@ -1,0 +1,30 @@
+.card_wrapp{
+    margin: 20px;
+    width: 400px;
+    height: 630px;
+    border: 1px solid #000;
+    border-radius: 20px;
+
+        .img{
+            padding: 20px;
+        }
+        .title_card{
+            text-align: center;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 37px;
+            line-height: 69px;
+        }
+
+        .inner_txt{
+            padding: 20px;
+            text-align: center;
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+        }
+}
+

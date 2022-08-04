@@ -226,7 +226,7 @@
                         <img src="../assets/cartImg/dislike.png" alt="">
                     </div>
                     <BtnCart />
-                </div>
+            </div>
 
             </div>
         </div>
@@ -249,6 +249,7 @@ import BtnCart from './v-buttonCart.vue'
 
 <style lang="scss" scoped>
 .cart{
+    
     margin-top: 90px;
 
     .title{
