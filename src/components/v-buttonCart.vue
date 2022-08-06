@@ -1,14 +1,15 @@
 <template>
         
-        <button class="btn_cart" >
-            <p class="title">
+        <div id="buttonCoun">
+            <button @click="add" class="btn_cart" >
                 Add to cart
-            </p>
-
             <span class="cirkul">
-                <p>1</p>
+                <p >{{count}}</p>  
             </span>
+            
         </button>
+        <button @click="del" class="remuve">delete</button>
+        </div>
 
 </template>
 
@@ -16,8 +17,26 @@
 <script>
 
 
-export default{
-    name: 'BtnCart'
+
+
+
+
+
+export default {
+    name: "BtnCart",
+    methods:{
+        add: function(){
+            this.count++
+        },
+        del: function(){
+            if (this.count>0) this.count--;
+        }
+    },
+    data() {
+        return {
+            count: 0
+        }
+    }
 }
 
 
@@ -27,6 +46,10 @@ export default{
 
 
 <style lang="scss" scoped>
+#buttonCoun{
+    display: flex;
+
+}
 .btn_cart{
     align-items: center;
     display: flex;
@@ -42,6 +65,11 @@ export default{
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
+    .cirkul{
+        p{
+            padding: 2px;
+        }
+    }
     &:hover{
         color: #fc6006;
     }
@@ -51,6 +79,17 @@ export default{
         border: 1px solid #0126DE;
         border-radius: 50px;
 
+    }
+}
+.remuve{
+    cursor: pointer;
+    margin-left: 10px;
+    border: 1px solid #0126DE;
+    background: transparent;
+    border-radius: 40px;
+    color: #0126DE;
+    &:hover{
+        color: #fc6006;
     }
 }
 

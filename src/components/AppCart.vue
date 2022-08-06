@@ -7,247 +7,327 @@
         </div>
 
         <div class="cart_grig">
-            <div class="wrapperCart">
-            <div class="cart_items">
-                <img src="../assets/cartImg/All-butter.png" alt="" class="img_cart">
-                
-                <div class="rating_glo">
-                    <div class="cart_title">
-                        <h3 class="cart_inner">
-                            All-Butter <br>Croissant
-                        </h3>
+            <swiper
+                ref="{swiperRef}"
+                :slidesPerView="3"
+                :centeredSlides="true"
+                :spaceBetween="30"
+                :pagination="{
+                type: 'fraction',
+                }"
+                :navigation="true"
+                :modules="modules"
+                class="mySwiper"
+            >
+                <swiper-slide>
+                    <div class="wrapperCart">
+                    <div class="cart_items">
+                        <img src="../assets/cartImg/All-butter.png" alt="" class="img_cart">
+                        
+                        <div class="rating_glo">
+                            <div class="cart_title">
+                                <h3 class="cart_inner">
+                                    All-Butter <br>Croissant
+                                </h3>
+                            </div>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="options">
+                            <div class="artikul">
+                                <p>Kit of 6</p>
+                                <span>-</span>
+                            </div>
+                            <div class="price">
+                                <span>£</span>
+                                <p>12</p>
+                            </div>
+                        </div>
+                        <div class="like">
+                            <img src="../assets/cartImg/like.png" alt="">
+                            <img src="../assets/cartImg/dislike.png" alt="">
+                        </div>
+                        <BtnCart />
                     </div>
-                    <div class="rating">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star "></span>
-                        <span class="fa fa-star "></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                    </div>
-                </div>
-                
-                <div class="options">
-                    <div class="artikul">
-                        <p>Kit of 6</p>
-                        <span>-</span>
-                    </div>
-                    <div class="price">
-                        <span>£</span>
-                        <p>12</p>
-                    </div>
-                </div>
-                <div class="like">
-                    <img src="../assets/cartImg/like.png" alt="">
-                    <img src="../assets/cartImg/dislike.png" alt="">
-                </div>
-                <BtnCart />
-            </div>
 
-            </div>
-            <div class="wrapperCart">
-                <div class="cart_items">
-                    <img src="../assets/cartImg/Almond.png" alt="" class="img_cart">
-                    
-                    <div class="rating_glo">
-                        <div class="cart_title">
-                            <h3 class="cart_inner">
-                                Almond  <br>Croissant
-                            </h3>
-                        </div>
-                        <div class="rating">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star "></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
                     </div>
-                    
-                    <div class="options">
-                        <div class="artikul">
-                            <p>Kit of 6</p>
-                            <span>-</span>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="wrapperCart">
+                        <div class="cart_items">
+                            <img src="../assets/cartImg/Almond.png" alt="" class="img_cart">
+                            
+                            <div class="rating_glo">
+                                <div class="cart_title">
+                                    <h3 class="cart_inner">
+                                        Almond  <br>Croissant
+                                    </h3>
+                                </div>
+                                <div class="rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star "></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="options">
+                                <div class="artikul">
+                                    <p>Kit of 6</p>
+                                    <span>-</span>
+                                </div>
+                                <div class="price">
+                                    <span>£</span>
+                                    <p>13.50</p>
+                                </div>
+                            </div>
+                            <div class="like">
+                                <img src="../assets/cartImg/like.png" alt="">
+                                <img src="../assets/cartImg/dislike.png" alt="">
+                            </div>
+                            <BtnCart />
                         </div>
-                        <div class="price">
-                            <span>£</span>
-                            <p>13.50</p>
+
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="wrapperCart">
+                        <div class="cart_items">
+                            <img src="../assets/cartImg/Aprihot.png" alt="" class="img_cart">
+                            
+                            <div class="rating_glo">
+                                <div class="cart_title">
+                                    <h3 class="cart_inner">
+                                        Apricot  <br>Danish
+                                    </h3>
+                                </div>
+                                <div class="rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star "></span>
+                                    <span class="fa fa-star "></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="options">
+                                <div class="artikul">
+                                    <p>Kit of 6</p>
+                                    <span>-</span>
+                                </div>
+                                <div class="price">
+                                    <span>£</span>
+                                    <p>12</p>
+                                </div>
+                            </div>
+                            <div class="like">
+                                <img src="../assets/cartImg/like.png" alt="">
+                                <img src="../assets/cartImg/dislike.png" alt="">
+                            </div>
+                            <BtnCart />
                         </div>
+
                     </div>
-                    <div class="like">
-                        <img src="../assets/cartImg/like.png" alt="">
-                        <img src="../assets/cartImg/dislike.png" alt="">
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="wrapperCart">
+                        <div class="cart_items">
+                            <img src="../assets/cartImg/pianAux.png" alt="" class="img_cart">
+                            
+                            <div class="rating_glo">
+                                <div class="cart_title">
+                                    <h3 class="cart_inner">
+                                        Pain Aux  <br>Raisins
+                                    </h3>
+                                </div>
+                                <div class="rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star "></span>
+                                    <span class="fa fa-star "></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="options">
+                                <div class="artikul">
+                                    <p>Kit of 6</p>
+                                    <span>-</span>
+                                </div>
+                                <div class="price">
+                                    <span>£</span>
+                                    <p>12</p>
+                                </div>
+                            </div>
+                            <div class="like">
+                                <img src="../assets/cartImg/like.png" alt="">
+                                <img src="../assets/cartImg/dislike.png" alt="">
+                            </div>
+                            <BtnCart />
+                        </div>
+
                     </div>
-                    <BtnCart />
+                </swiper-slide>
+
+                <swiper-slide>
+                    <div class="wrapperCart">
+                    <div class="cart_items">
+                        <img src="../assets/cartImg/pianChoco.png" alt="" class="img_cart">
+                        
+                        <div class="rating_glo">
+                            <div class="cart_title">
+                                <h3 class="cart_inner">
+                                    Pain Au  <br>Chocolat
+                                </h3>
+                            </div>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="options">
+                            <div class="artikul">
+                                <p>Kit of 6</p>
+                                <span>-</span>
+                            </div>
+                            <div class="price">
+                                <span>£</span>
+                                <p>12</p>
+                            </div>
+                        </div>
+                        <div class="like">
+                            <img src="../assets/cartImg/like.png" alt="">
+                            <img src="../assets/cartImg/dislike.png" alt="">
+                        </div>
+                        <BtnCart />
+                    </div>
+
+                    </div>
+                </swiper-slide>
+
+                <swiper-slide>
+                    <div class="wrapperCart">
+                    <div class="cart_items">
+                        <img src="../assets/cartImg/Raspberry.png" alt="" class="img_cart">
+                        
+                        <div class="rating_glo">
+                            <div class="cart_title">
+                                <h3 class="cart_inner">
+                                    Raspberry  <br>Danish
+                                </h3>
+                            </div>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="options">
+                            <div class="artikul">
+                                <p>Kit of 6</p>
+                                <span>-</span>
+                            </div>
+                            <div class="price">
+                                <span>£</span>
+                                <p>12.50</p>
+                            </div>
+                        </div>
+                        <div class="like">
+                            <img src="../assets/cartImg/like.png" alt="">
+                            <img src="../assets/cartImg/dislike.png" alt="">
+                        </div>
+                        <BtnCart />
                 </div>
 
-            </div>
-            <div class="wrapperCart">
-                <div class="cart_items">
-                    <img src="../assets/cartImg/Aprihot.png" alt="" class="img_cart">
-                    
-                    <div class="rating_glo">
-                        <div class="cart_title">
-                            <h3 class="cart_inner">
-                                Apricot  <br>Danish
-                            </h3>
-                        </div>
-                        <div class="rating">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star "></span>
-                            <span class="fa fa-star "></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
                     </div>
-                    
-                    <div class="options">
-                        <div class="artikul">
-                            <p>Kit of 6</p>
-                            <span>-</span>
-                        </div>
-                        <div class="price">
-                            <span>£</span>
-                            <p>12</p>
-                        </div>
-                    </div>
-                    <div class="like">
-                        <img src="../assets/cartImg/like.png" alt="">
-                        <img src="../assets/cartImg/dislike.png" alt="">
-                    </div>
-                    <BtnCart />
-                </div>
+                </swiper-slide>
 
-            </div>
-            <div class="wrapperCart">
-                <div class="cart_items">
-                    <img src="../assets/cartImg/pianAux.png" alt="" class="img_cart">
-                    
-                    <div class="rating_glo">
-                        <div class="cart_title">
-                            <h3 class="cart_inner">
-                                Pain Aux  <br>Raisins
-                            </h3>
+                <swiper-slide>
+                    <div class="wrapperCart">
+                    <div class="cart_items">
+                        <img src="../assets/cartImg/pianChoco.png" alt="" class="img_cart">
+                        
+                        <div class="rating_glo">
+                            <div class="cart_title">
+                                <h3 class="cart_inner">
+                                    Pain Au  <br>Chocolat
+                                </h3>
+                            </div>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
                         </div>
-                        <div class="rating">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star "></span>
-                            <span class="fa fa-star "></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
+                        
+                        <div class="options">
+                            <div class="artikul">
+                                <p>Kit of 6</p>
+                                <span>-</span>
+                            </div>
+                            <div class="price">
+                                <span>£</span>
+                                <p>12</p>
+                            </div>
                         </div>
+                        <div class="like">
+                            <img src="../assets/cartImg/like.png" alt="">
+                            <img src="../assets/cartImg/dislike.png" alt="">
+                        </div>
+                        <BtnCart />
                     </div>
-                    
-                    <div class="options">
-                        <div class="artikul">
-                            <p>Kit of 6</p>
-                            <span>-</span>
-                        </div>
-                        <div class="price">
-                            <span>£</span>
-                            <p>12</p>
-                        </div>
-                    </div>
-                    <div class="like">
-                        <img src="../assets/cartImg/like.png" alt="">
-                        <img src="../assets/cartImg/dislike.png" alt="">
-                    </div>
-                    <BtnCart />
-                </div>
 
-            </div>
-            <div class="wrapperCart">
-                <div class="cart_items">
-                    <img src="../assets/cartImg/pianChoco.png" alt="" class="img_cart">
-                    
-                    <div class="rating_glo">
-                        <div class="cart_title">
-                            <h3 class="cart_inner">
-                                Pain Au  <br>Chocolat
-                            </h3>
-                        </div>
-                        <div class="rating">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star "></span>
-                            <span class="fa fa-star "></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
                     </div>
-                    
-                    <div class="options">
-                        <div class="artikul">
-                            <p>Kit of 6</p>
-                            <span>-</span>
-                        </div>
-                        <div class="price">
-                            <span>£</span>
-                            <p>12</p>
-                        </div>
-                    </div>
-                    <div class="like">
-                        <img src="../assets/cartImg/like.png" alt="">
-                        <img src="../assets/cartImg/dislike.png" alt="">
-                    </div>
-                    <BtnCart />
-                </div>
-
-            </div>
-            <div class="wrapperCart">
-                <div class="cart_items">
-                    <img src="../assets/cartImg/Raspberry.png" alt="" class="img_cart">
-                    
-                    <div class="rating_glo">
-                        <div class="cart_title">
-                            <h3 class="cart_inner">
-                                Raspberry  <br>Danish
-                            </h3>
-                        </div>
-                        <div class="rating">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star "></span>
-                            <span class="fa fa-star "></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-                    </div>
-                    
-                    <div class="options">
-                        <div class="artikul">
-                            <p>Kit of 6</p>
-                            <span>-</span>
-                        </div>
-                        <div class="price">
-                            <span>£</span>
-                            <p>12.50</p>
-                        </div>
-                    </div>
-                    <div class="like">
-                        <img src="../assets/cartImg/like.png" alt="">
-                        <img src="../assets/cartImg/dislike.png" alt="">
-                    </div>
-                    <BtnCart />
-            </div>
-
-            </div>
+                </swiper-slide>
+            </swiper>
         </div>
-        
     </div>
 </template>
 
 <script>
+import { Pagination, Navigation } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/vue";
+import "swiper/scss";
+
+import "swiper/scss/pagination";
+import "swiper/scss/navigation";
 import "./cart.scss"
 
 import BtnCart from './v-buttonCart.vue'
     export default {
         name: 'AppCart',
         components: {
-            BtnCart
-        }
-            
+            BtnCart,
+            Swiper,
+            SwiperSlide,
+        },
+        setup() {   
+            return {
+                modules: [Pagination, Navigation],
+            };
+        },    
     }
+    
 </script>
 
 <style lang="scss" scoped>
+
 .cart{
     
     margin-top: 90px;
@@ -266,13 +346,7 @@ import BtnCart from './v-buttonCart.vue'
         }
     
 }
-.cart_grig{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr) 0;
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
-}
+
 
 
 

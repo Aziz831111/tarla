@@ -8,6 +8,7 @@
 <AppSectionE />
 <AppSectionF />
 <AppSectionJ />
+<AppCarosel />
 <AppSectionFooter />
 
 
@@ -24,6 +25,7 @@ import AppSectionE from './components/AppSectionE.vue';
 import AppSectionF from './components/AppSectionF.vue';
 import AppSectionFooter from './components/AppSectionFooter.vue';
 import AppSectionJ from './components/AppSectionJ.vue';
+import AppCarosel from './components/AppCarosel.vue';
 
 
 
@@ -41,6 +43,7 @@ export default {
     AppSectionF,
     AppSectionJ,
     AppSectionFooter,
+    AppCarosel
 }
 }
 </script>
