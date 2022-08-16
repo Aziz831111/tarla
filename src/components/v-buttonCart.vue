@@ -1,26 +1,24 @@
 <template>
         
         <div id="buttonCoun">
-            <button @click="add" class="btn_cart" >
-                Add to cart
-            <span class="cirkul">
-                <p >{{count}}</p>  
-            </span>
-            
-        </button>
-        <button @click="del" class="remuve">delete</button>
+            <button @click="add" 
+                class="btn_cart" >
+                Celect
+                <span class="cirkul">
+                    <p >{{count}}</p>  
+                </span>
+            </button>
+
+            <button @click="del"
+                class="remuve">
+                delete
+            </button>
         </div>
 
 </template>
 
 
 <script>
-
-
-
-
-
-
 
 export default {
     name: "BtnCart",
@@ -30,7 +28,7 @@ export default {
         },
         del: function(){
             if (this.count>0) this.count--;
-        }
+        },
     },
     data() {
         return {
@@ -38,8 +36,6 @@ export default {
         }
     }
 }
-
-
 </script>
 
 
@@ -92,5 +88,6 @@ export default {
         color: #fc6006;
     }
 }
+
 
 </style>

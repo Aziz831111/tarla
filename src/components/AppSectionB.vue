@@ -49,7 +49,10 @@
             </div>
         </div>
         <div class="btnSecB">
-            <BtN />
+            <router-link to="catalog">
+                <BtN />
+            </router-link>
+            
         </div>
         </div>
     </div>

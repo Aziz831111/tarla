@@ -19,11 +19,11 @@
                 to do is roll, proof and bake!
             </p>
         </div>
-        <a href="#">
-            <button class="btn">
-                Shop pastry kits
-            </button>
-        </a>
+            
+                <button class="btn">
+                    Shop pastry kits
+                </button>
+            
         <div class="carousel">
         <swiper
             :autoplay="{

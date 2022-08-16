@@ -12,8 +12,8 @@
     padding-top: 15px;
 }
 .options{
-    width: 120px;
-    height: 32px;
+    width: 202px;
+    height: 22px;
     display: flex;
     justify-content: space-between;
 }
@@ -39,7 +39,7 @@
     display: flex;
     position: relative;
     left: 290px;
-    top: 25px;
+    top: -25px;
 
     img{
         cursor: pointer;

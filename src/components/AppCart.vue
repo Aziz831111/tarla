@@ -1,5 +1,5 @@
 <template>
-    <div class="cart">
+    <div class="cart__catalog-carousel">
         <div class="title">
             <h1 class="title_text">
                 Shop pastry kits
@@ -55,7 +55,6 @@
                         </div>
                         <BtnCart />
                     </div>
-
                     </div>
                 </swiper-slide>
                 <swiper-slide>
@@ -326,11 +325,12 @@ import BtnCart from './v-buttonCart.vue'
     
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 
-.cart{
-    
+.cart__catalog-carousel{
     margin-top: 90px;
+    margin-bottom: 50px;
+    
 
     .title{
         text-align: center;
@@ -345,6 +345,9 @@ import BtnCart from './v-buttonCart.vue'
             color: #0000;
         }
     
+}
+.cart_grig{
+    height: 700px;
 }
 
 

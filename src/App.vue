@@ -1,50 +1,18 @@
 <template>
-<AppHeader />
-<AppSectionA />
-<AppSectionB />
-<AppSectionC />
-<AppCart />
-<AppSectionD />
-<AppSectionE />
-<AppSectionF />
-<AppSectionJ />
-<AppCarosel />
-<AppSectionFooter />
+<keep-alive>
+  <router-view></router-view>
+</keep-alive>
+
 
 
 </template>
 
 <script>
-import AppHeader from './components/AppHeader.vue';
-import AppSectionA from './components/AppSectionA.vue';
-import AppSectionB from './components/AppSectionB.vue';
-import AppSectionC from './components/AppSectionC.vue';
-import AppCart from './components/AppCart.vue';
-import AppSectionD from './components/AppSectionD.vue';
-import AppSectionE from './components/AppSectionE.vue';
-import AppSectionF from './components/AppSectionF.vue';
-import AppSectionFooter from './components/AppSectionFooter.vue';
-import AppSectionJ from './components/AppSectionJ.vue';
-import AppCarosel from './components/AppCarosel.vue';
-
-
 
 
 export default {
   name: 'App',
-  components: {
-    AppHeader,
-    AppSectionA,
-    AppSectionB,
-    AppSectionC,
-    AppCart,
-    AppSectionD,
-    AppSectionE,
-    AppSectionF,
-    AppSectionJ,
-    AppSectionFooter,
-    AppCarosel
-}
+  
 }
 </script>
 

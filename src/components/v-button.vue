@@ -1,7 +1,7 @@
 <template>
-        
-        <button class="btn_content" >Shop pastry kits</button>
-
+        <router-link :to="{name: 'catalog', params:{product_data: PRODUCTS}}">
+            <button class="btn_content" >Shop pastry kits</button>
+        </router-link>
 </template>
 
 

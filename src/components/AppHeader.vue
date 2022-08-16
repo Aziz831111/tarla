@@ -1,9 +1,11 @@
 <template>
-    <div class="wrapp">
+    <div class="header__wrapp">
         <div class="header">
-            <div class="logo">
-                <a href="#"><img src="../assets/header/Logo.png" alt="Logo"></a>
-            </div>
+            <router-link to="/">
+                <div class="logo">
+                    <img src="../assets/header/Logo.png" alt="Logo">
+                </div>
+            </router-link>
             <div class="nav">
                 <ul class="nav_item">
                     <a href="#"><li>Shop</li></a>
@@ -22,11 +24,12 @@
             </div>
 
             <div class="cart">
-                <a href="#">
-                    <img class="cart_in_item" src="../assets/header/cart.png" alt="">
-                    <h4 class="cart_txt">Cart</h4>
-                </a>
-                
+                <router-link :to="{name: 'cart', params:{cart_data: CART}}" >
+                    <div>
+                        <img class="cart_in_item" src="../assets/header/cart.png" alt="">
+                        <h4 class="cart_txt">Cart</h4>
+                    </div>
+                </router-link>
             </div>
         </div>
     </div>
@@ -37,29 +40,38 @@
 
 
 <script>
+import { mapGetters } from 'vuex'
+import './reset.css'
 export default{
-    name: 'AppHeader'
+    name: 'AppHeader',
+    computed:{
+        ...mapGetters([
+            'CART'
+        ])
+    }
 }
 
 </script>
 
 
 
-<style scoped>
-.wrapp{
+<style lang="scss">
+.header__wrapp{
     padding-top: 20px;
     display: flex;
     justify-content: space-between;
     height: 90px;
+    box-shadow: 0px 0px 3px 0px;
 }
 .header{
     padding-left: 15px;
     display: flex;
 }
-
+.nav{
+    padding-top: 40px;
+}
 .nav_item{
     margin-left: 10px;
-    padding-top: 40px;
     display: flex;
 
 }

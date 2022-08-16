@@ -1,0 +1,53 @@
+{
+    "products": [
+      { "id": 1, 
+        "image": "All-butter.png",
+        "name": "All-Butter", 
+        "title": "Croissant",
+        "quantity": "",
+        "price": "2"
+      },
+
+      { "id": 2, 
+        "image": "Almond.png",
+        "name": "Almond", 
+        "title": "Croissant",
+        "quantity": "",
+        "price": "2"
+      },
+      
+    { "id": 3, 
+      "image": "Aprihot.png",
+      "name": "Apricot", 
+      "title": "Danish",
+      "quantity": "",
+      "price": "1"
+    },
+
+    { "id": 4, 
+      "image": "pianAux.png",
+      "name": "Pain Aux ", 
+      "title": "Raisins",
+      "quantity": "",
+      "price": "1"
+    },
+    
+    { "id": 5, 
+      "image": "pianChoco.png",
+      "name": "Pain Au", 
+      "title": "Chocolat",
+      "quantity": "",
+      "price": "2"
+    },
+    
+    { "id": 6, 
+      "image": "Raspberry.png",
+      "name": "Raspberry", 
+      "title": "Danish",
+      "quantity": "",
+      "price": "2"
+    }
+  ]
+
+    
+}
