@@ -8,7 +8,9 @@
             </router-link>
             <div class="nav">
                 <ul class="nav_item">
-                    <a href="#"><li>Shop</li></a>
+                    <router-link to="catalog">
+                        <li>Shop</li>
+                    </router-link>
                     <a href="#"><li>Our Story</li></a>
                     <a href="#"><li>Who is Tarla?</li></a>
                 </ul>
@@ -69,6 +71,9 @@ export default{
 }
 .nav{
     padding-top: 40px;
+    @media (max-width: 425px) {
+        display: none;
+    };
 }
 .nav_item{
     margin-left: 10px;

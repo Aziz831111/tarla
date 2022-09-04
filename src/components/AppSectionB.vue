@@ -1,8 +1,8 @@
 <template>
     <div class="secB">
         <div class="wrapp">
-            <div class="title">
-            <h1 class="title_inner">
+            <div class="title__b-sec">
+            <h1 class="title_inner-b">
                 How it works
             </h1>
         </div>
@@ -73,7 +73,7 @@ import BtN from "./v-button.vue"
 
 
 
-<style scoped>
+<style lang="scss">
 .secB{
     background-color: #F5EDE7;
     height: 100vh;
@@ -88,8 +88,12 @@ import BtN from "./v-button.vue"
     display: flex;
     align-items: center;
     justify-content: space-around;
+    @media (max-width: 768px){
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
 }
-.title_inner{
+.title_inner-b{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -102,6 +106,18 @@ img{
     display: inline-block;
 
 }
+.kruasan,
+.bell,
+.get,
+.like{
+    @media (max-width: 768px){
+        height: 300px;
+    }
+    @media (max-width: 425px){
+        height: 300px;
+    }
+}
+
 .kruasan_blog,
 .bell_blog,
 .get_blog,
@@ -124,6 +140,17 @@ img{
     text-align: center;
     text-transform: uppercase;
     color: #000000;
+    @media (max-width: 1024px){
+        font-size: 22px;
+
+    }
+    @media (max-width: 768px){
+        font-size: 20px;
+        line-height: normal;
+        width: 125px;
+        height: 46px;
+
+    }
 }
     .kruasan_text, 
     .bell_text, 
@@ -139,6 +166,11 @@ img{
         line-height: 28px;
         text-align: center;
         color: #000000;
+        @media (max-width: 1024px){
+        font-size: 14px;
+        width: 200px;
+
+    }
     }
      .btnSecB{
         text-align: center;

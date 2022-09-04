@@ -82,12 +82,23 @@ import "swiper/css/navigation";
 
 
 
-<style scoped>
+<style lang="scss">
 .wrapper{
     background-color: #FFC3A0;
     width: 100%;
     height: 100vh;
     padding-bottom: 50px;
+    @media (max-width: 768px) {
+        height: 55vh;
+    };
+    @media (max-width: 425px) {
+        height: 115vh;
+    };
+    @media (max-width: 390px) {
+        height: 105vh;
+    };
+    
+    
 
 }
 .title_inner{
@@ -95,14 +106,21 @@ import "swiper/css/navigation";
     position: absolute;
     top: 107px;
     margin-left: 16px;
-    Width: 189px;
-    Height: 90px;
+    width: 189px;
+    height: 90px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 76px;
     line-height: 90px;
     color: black;
+    @media (max-width: 768px) {
+        font-size: 50px;
+        top: 60px;
+    };
+    @media (max-width: 320px){
+        font-size: 30px;
+    }
 }
 
 .title_cool{
@@ -117,6 +135,15 @@ import "swiper/css/navigation";
     font-size: 78px;
     line-height: 90px;
     color: black;
+    @media (max-width: 768px) {
+        font-size: 50px;
+        top: 135px;
+    };
+    @media (max-width: 320px){
+        font-size: 30px;
+        width: 244px;
+
+    }
 }
 
 .text{
@@ -125,7 +152,21 @@ import "swiper/css/navigation";
     width: 450px;
     height: 145px;
     position: absolute;
+    @media (max-width: 768px) {
+        top: 225px;
+        width: 377px;
+    };
+    @media (max-width: 375px){
+        width: 324px;
+    }
+    @media (max-width: 390px){
+        width: 350px;
+    }
+    @media (max-width: 320px){
+        width: 287px;
+    }
 }
+
 .text_inner{
     
 
@@ -134,6 +175,10 @@ import "swiper/css/navigation";
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
+    @media (max-width: 768px) {
+        font-size: 14px;
+    };
+    
 
 }
 .btn{
@@ -146,12 +191,45 @@ import "swiper/css/navigation";
     margin-left: 16px;
     border-radius: 35px;
     background: transparent;
+    @media (max-width: 768px) {
+        height: 32px;
+        top: 340px;
+        width: 196px;
+    };
+    @media (max-width: 375px){
+        top: 368px;
+    }
+    @media (max-width: 390px){
+        top: 369px;
+        margin-left: 88px;
+    }
+    @media (max-width: 320px){
+        top: 413px;
+        margin-left: 60px;
+    }
     
 }
 .carousel img{
     width: 800px;
     height: 550px;
     border-radius: 10px; 
+    @media (max-width: 1024px) {
+        width: 506px;
+        height: 423px;
+    };
+    @media (max-width: 768px) {
+        width: 355px;
+        height: 238px;
+    };
+    @media (max-width: 390px) {
+        width: 348px;
+        height: 180px;
+        
+    }
+    @media (max-width: 320px) {
+        width: 278px;
+        height: 133px;
+    }
 }
 .carousel{
     margin-top: 30px;
@@ -160,6 +238,37 @@ import "swiper/css/navigation";
     height: 550px;
     right: 0;
     margin-right: 20px;
+
+    @media (max-width: 1024px) {
+        width: 506px;
+        height: auto;
+    };
+    @media (max-width: 768px) {
+        width: 355px;
+        height: auto;
+    };
+    @media (max-width: 425px) {
+        top: 375px;
+        height: 238px;
+        margin: 35px;
+    };
+    @media (max-width: 375px){
+        margin: 15px;
+        top: 390px;
+        width: 345px;
+    }
+    @media (max-width: 390px) {
+        width: 348px;
+        height: 180px;
+        margin: 20px;
+        top: 392px;
+    }
+    @media (max-width: 320px) {
+        width: 278px;
+        height: 133px;
+        margin: 20px;
+        top: 451px;
+    }
 }
 
 </style>

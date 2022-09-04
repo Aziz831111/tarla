@@ -9,7 +9,7 @@
 <AppSectionF />
 <AppSectionJ />
 <AppCarosel />
-<AppSectionFooter />
+<AppSectionFooter /> 
 
 
 </template>
